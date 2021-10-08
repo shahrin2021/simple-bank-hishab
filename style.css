@@ -1,0 +1,98 @@
+.login-section{
+    display: flex;
+    align-items: center;
+   text-align: center;
+    height: 100vh;
+ 
+}
+
+.login-form{
+    max-width: 600px;
+}
+
+/* validation */
+
+.invalid-email-section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: -50%;
+    display: none;
+     
+}
+
+
+
+.invalid-email-area{
+
+    background:#fff;
+    border: #ddd;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+   
+
+}
+
+
+    
+
+.active{
+    display: block;
+}
+
+.invalid-password-section{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background:hsla(74, 100%, 50%, 0.5);
+    transform: translate(-50% , -50%);
+    display: none;
+   
+}
+
+.invalid-password-area{
+
+    background:#fff;
+    border: #ddd;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.show{
+    display: block;
+}
+
+.invalid-emailpassword-section{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background:hsla(74, 100%, 50%, 0.5);
+    transform: translate(-50% ,-50%);
+    display: none;
+}
+
+.invalid-emailpassword-area{
+
+    background:#fff;
+    border: #ddd;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.visible{
+    display: block;
+}

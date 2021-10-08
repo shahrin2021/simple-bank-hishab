@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl text-center mb-16">Let's get some <span class="text-blue-700	">moooney...</span></h1>
+            <div class=" grid lg:grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1">
+                <div class="deposit-area text-center border bg-yellow-400 border-yellow-400		py-8 rounded">
+                    <h3 class="diposit__title text-4xl text-white mb-2">Deposit</h3>
+                    <h2 id=" diposit-money" class="text-4xl">$<span id="diposit-money">00</span> </h2>
+                </div>
+                <div class="withdrow-area text-center border bg-blue-500 border-blue-500 py-8 rounded">
+                    <h3 class="withdrow__title text-4xl text-white mb-2">Withdrow</h3>
+                    <h2 class="text-4xl">$<span id="withdraw-value" class="withdraw-value ">00</span></h2>
+                </div>
+                <div class="balance-area text-center border bg-pink-600	 border-pink-600 py-8 rounded	">
+                    <h3 class="balance__title text-4xl text-white mb-2">Balance</h3>
+                    <h2 class="text-4xl">$<span id="balance" class="">1024</span></h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- money deposit and widrow section -->
+
+    <section class="mt-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-4xl mb-14">Deposit and Withdraw money section</h2>
+            <div class="grid lg:grid-cols-2 gap-3 md:grid-cols-1 sm:grid-cols-1">
+                <div class="border text-center bg-blue-500 py-16 rounded">
+                    <input id="deposit-input" class="block border w-3/4 mx-auto p-1" type="text"
+                        placeholder="Deposit your money">
+                    <button class="border block py-1 px-8 bg-pink-700 mx-auto mt-5 text-xl text-white rounded"
+                        id="diposit-btn" disabled>Deposit</button>
+                </div>
+                <div class=" border text-center bg-yellow-800 py-16 rounded">
+                    <input id="withdraw-input" class="block border w-3/4 mx-auto p-1" type="text"
+                        placeholder="withdraw your money">
+                    <button class="border block py-1 px-8 bg-pink-700 mx-auto mt-5 text-xl text-white rounded"
+                        id="withdraw-btn">withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./banking.js"></script>
+</body>
+
+</html>
